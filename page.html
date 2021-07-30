@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function validateForm() {
+             let x = document.forms["page.html"]["uname"].value;
+                if (x == "") {
+                 alert("Name must be filled out");
+                 return false;
+  }
+}
+        </script>
+        <form action="frst.html" method="POST" id="form1"  onsubmit="return validateForm()">  
+       
+        <style>
+        
+            body
+        {
+            background-color: #392953;
+            font-family: montserrat, arial, verdana;
+            height:100%;
+            margin:auto;
+            text-align:left;
+            
+        }
+        #lform
+        {
+            color:white;
+        }
+       
+        #sub
+        {
+            background:#CB9AFF;
+            border-radius: 5px;
+            display: block;
+            padding:10px 50px;
+            
+        }
+        #fs
+        {
+            box-sizing: border-box;
+            background-color:#1b0433;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            width:30%;
+            margin-top: 40px;
+            margin-right:50px;
+            padding:5px 40px;
+            margin-left:500px;
+        }
+        #uname,#Pass
+        {
+            padding:20px 10px;
+            width:80%;
+        }
+        legend {
+            width: 30px;
+            padding: 1px;
+            margin-left: calc(50% - 35px - 8px);
+            color:white;
+        }
+        </style>
+        <fieldset id="fs">
+            <legend>STUDENT</legend>
+            <h1 id="lform">Student Login</h1><br>
+            <label style="color: white;" for="name" id="uname" name="uname" >Username</label></style><br>
+            <br>
+            <input type="text" id="uname" placeholder="Enter Username" required></input><br>
+            <br>
+            <label style="color: white;" for="Pass" id="Pass">Password</label><br>
+            <br>
+            <input type="password" id="Pass" name="Pass" minlength="8" required placeholder="Enter Password"></label><br>
+            <br>
+            <br>
+            <button type="submit" id="sub">Login</button>
+            <br>
+            
+        </form>
+    </fieldset>
+        </body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <div id="Align">
+    <style>
+        #Align
+        {
+            margin:auto;
+            width:max-content;
+            text-align:left;
+            margin-left: auto;
+        }
+       
+        body
+        {
+ 
+            background-color: #392953;
+            background-attachment:scroll;
+            background-size:100% 100%;
+            height:100%;
+        }
+        #fs
+        {
+            background-color:#1b0433;
+            color:white;
+            width: 150%;
+            font-family: montserrat, arial, verdana;
+        }
+        h2
+        {
+            color:white;
+            font-family: montserrat, arial, verdana;
+        }
+        #button
+        {
+            
+            background:#CB9AFF;
+            border-radius: 5px;
+            display: block;
+            padding:10px 50px;
+        }
+         
+        #Num
+        {
+        
+            padding:10px 5px;
+            width:30%;
+            height:2%;
+        }
+    </style>
+
+        <h2>Online classes feedback form</h2>
+        
+        <form action="page.html" method="GET" id="form1">
+            <fieldset id="fs">
+             
+            <label for="Register number" >Register number</label><br>
+            <br>
+            <input type="number" id="Num" name="Num" placeholder="Enter Register number" required></input><br>
+            <br>
+            <label for="Department">Department</label><br>
+            <br>
+            <select name="SEC" id="SEC"><br>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ICT">ICT</option>
+             </select><br>
+             <br>
+            <label for="Classes">Section</label><br>
+            <br>
+            <select name="SEC" id="SEC"><br>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">D</option>
+             </select><br>
+             <br>
+             <label for="lr">Is learning resources enough?</label><br>
+             <br>
+             <input type="radio" id="Sa" name="Sa">Very Satisfied</input><br>
+             <input type="radio" id="S" name="S">Satisfied</input><br>
+             <input type="radio" id="G" name="G">Good</input><br>
+             <input type="radio" id="P" name="P">Poor</input><br>
+             <br>
+             <label for="ur">Did you understand the classes?</label><br>
+             <br>
+             <input type="radio" id="Sa" name="Sa">Very Satisfied</input><br>
+             <input type="radio" id="S" name="S">Satisfied</input><br>
+             <input type="radio" id="G" name="G">Good</input><br>
+             <input type="radio" id="P" name="P">Poor</input><br>
+             <br>
+             <label for="Cia">Exams attended</label><br>
+             <br>
+             <input type="checkbox" id="c1" name="V">Cia1</input>
+             <input type="checkbox" id="c2" name="V">Cia2</input>
+             <input type="checkbox" id="c3" name="V">Cia2</input><br>
+             <br>
+             <textarea rows="4" cols="40" name="text" id="comment" placeholder="Enter your comments..."></textarea><br>
+             <br>
+             <label for="Ratings">Overall rating</label><br>
+             <br>
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span><br>
+            <br>
+            <button type="submit" id="button">Submit</button>
+            </div> 
+        </fieldset>
+        </form>
+        
+    </body>
+</html>
